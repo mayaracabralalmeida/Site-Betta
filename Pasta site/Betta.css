@@ -1,0 +1,35 @@
+body
+{
+  margin: auto;
+  padding: auto;
+}
+
+.menu
+{
+    position: static;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+    overflow: hidden;
+    display: grid;
+    place-items: center; /* Centraliza tudo nos dois eixos de uma vez */
+    grid-auto-flow: column;
+    justify-content: center;
+}
+
+.menu-link
+{
+    display: center;
+    color: aliceblue;
+    padding: 30px 40px;
+}
+
+.peixe
+{
+    position: relative;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: aqua;
+}

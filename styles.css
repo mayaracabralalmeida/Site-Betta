@@ -122,3 +122,9 @@ section {
         top: 210px;
     }
 }
+
+.move
+{
+  position: absolute;
+  left: 20%;
+}

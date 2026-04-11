@@ -92,3 +92,26 @@ section {
     width: 120px;
     height: auto;
 }
+
+
+
+.aquario {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.peixe {
+  width: "--peixe";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: transform 0.5s linear;
+  animation: flutuar 2s infinite ease-in-out;
+}
+
+@keyframes flutuar {
+  0%, 100% { top: 200px; }
+  50% { top: 210px; }
+}

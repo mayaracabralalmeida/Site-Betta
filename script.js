@@ -58,3 +58,36 @@ $(document).ready(function () {
         distance: '20%'
     })
 });
+
+const peixe = document.getElementById("peixe");
+const tamanho peixe = document.getElementById("--peixe")
+tamanho peixe = 100px;
+let x = 0;
+let y = 200;
+let direcao = 1; // 1 = direita, -1 = esquerda
+const velocidade = 2;
+const larguraPeixe = 100;
+
+function nadar() {
+  x += velocidade * direcao;
+
+  // bateu na direita
+  if (x >= window.innerWidth - larguraPeixe) {
+    direcao = -1;
+  }
+
+  // bateu na esquerda
+  if (x <= 0) {
+    direcao = 1;
+  }
+
+  // movimento vertical leve
+  y += (Math.random() - 0.5) * 2;
+
+  // 👇 AQUI está o segredo: sempre atualizar tudo junto
+  peixe.style.transform = `translate(${x}px, ${y}px) scaleX(${direcao})`;
+
+  if (x <= 0) {
+  tamanho peixe = 200px;
+}
+}

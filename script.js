@@ -60,8 +60,8 @@ $(document).ready(function () {
 });
 
 const peixe = document.getElementById("peixe");
-const tamanho peixe = document.getElementById("--peixe")
-tamanho peixe = 100px;
+const tamanhopeixe = document.getElementById("--peixe")
+tamanhopeixe = 100;
 let x = 0;
 let y = 200;
 let direcao = 1; // 1 = direita, -1 = esquerda
@@ -88,6 +88,6 @@ function nadar() {
   peixe.style.transform = `translate(${x}px, ${y}px) scaleX(${direcao})`;
 
   if (x <= 0) {
-  tamanho peixe = 200px;
+  tamanhopeixe = 200;
 }
 }

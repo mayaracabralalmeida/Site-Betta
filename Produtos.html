@@ -1,211 +1,195 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos/estilo.css">
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="src/javascript/script.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="javascript/script.js"></script>
+
     <title>Betta.com</title>
 </head>
-
 <body>
     <header>
         <nav id="navbar">
-            <img src="peixe-betta.png" alt="Logo Betta" id="nav_logo">
+            <div class="logo_box">
+                <img src="imagens/peixeBeta.png" alt="Peixe beta desenhado em cor preta" id="nav_logo">
+                <h1>BETTA.COM</h1>
+            </div>
 
             <ul id="nav_list">
-                <li class="nav-item">
-                    <a href="Inicio.html">Início</a>
+                <li class="nav_item">
+                    <a href="inicio.html">HOME</a>
                 </li>
-                <li class="nav-item active">
-                    <a href="Produtos.html">Produtos</a>
+                <li class="nav_item">
+                    <a href="sobre.html">SOBRE</a>
                 </li>
-                <li class="nav-item">
-                    <a href="Depoimento.html">Depoimentos</a>
+                <li class="nav_item">
+                    <a href="cuidados.html">CUIDADOS</a>
                 </li>
-                </li>
-                <li class="nav-item">
-                    <a href="Cuidados.html">Cuidados</a>
+                <li class="nav_item">
+                    <a href="produtos.html">PRODUTOS</a>
                 </li>
             </ul>
 
-            <button class="btn-default">
-                Blog
-            </button>
+            <a href="contato.html" class="botao_padrao">
+                CONTATO
+            </a>
 
-            <button id="mobile_btn">
+            <button id="botao_mobile">
                 <i class="fa-solid fa-bars"></i>
             </button>
+
         </nav>
 
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
-                <li class="nav-item">
-                    <a href="#home">Início</a>
+                <li class="nav_item">
+                    <a href="inicio.html">HOME</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#menu">Depoimentos</a>
+                <li class="nav_item">
+                    <a href="sobre.html">SOBRE</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#testimonials">Produtos</a>
+                <li class="nav_item">
+                    <a href="cuidados.html">CUIDADOS</a>
+                </li>
+                <li class="nav_item">
+                    <a href="depoimentos.html">DEPOIMENTOS</a>
+                </li>
+                <li class="nav_item">
+                    <a href="produtos.html">PRODUTOS</a>
                 </li>
             </ul>
 
-            <button class="btn-default">
-                Blog
-            </button>
+            <a href="contato.html" class="botao_padrao">
+                CONTATO
+            </a>
         </div>
     </header>
+    <main id="content">
+        <section id="home">
+            <div id="home_base">
+                <h1 class="title">Apenas o melhor para <span>você</span></h1>
 
-    <section id="menu">
-        <h2 class="section-title">Produtos</h2>
-        <h3 class="section-subtitle">Recomendados</h3>
+                <p class="descricao">
+                    Aqui você encontra uma curadoria dos melhores produtos disponíveis no mercado para o seu peixinho e o seu bolso.
+                </p>
 
-        <div id="dishes">
-            <div class="dish">
-                <div class="dish-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
+                <div class="rede_social_botao">
+                    <a href="https://web.whatsapp.com/">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
 
-                <img src="Circulo-Vermelho.png" class="dish-image" alt="">
-
-                <h3 class="dish-title">
-                    Seachem Prime condicionador
-                </h3>
-
-                <span class="dish-description">
-                    texto.
-                </span>
-
-                <div class="dish-rate">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span></span>
-                </div>
-
-                <div class="dish-price">
-                    <h4></h4>
-                    <button class="btn-default">
-                        <i class="fa-solid fa-basket-shopping"></i>
-                    </button>
+                     <a href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
                 </div>
             </div>
 
-            <div class="dish">
-                <div class="dish-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
+            <div id="banner">
+                <img src="imagens/betta.png" alt="Imagem de um peixe betta azul e preto">
+            </div>
+        </section>
 
-                <img src="Circulo-Vermelho.png" class="dish-image" alt="">
+        <section id="menu">
+            <h2 class="section_titulo">PRODUTOS</h2>
 
-                <h3 class="dish-title">
-                    Ração Poytarra Betta Black Line
-                </h3>
+            <div id="postagem_blog">
+                <div class="blog">
+                    <div>
+                        <img src="imagens/condicionador.png">
 
-                <span class="dish-description">
-                    Texto.
-                </span>
+                        <h3 class="blog_titulo">
+                            Condicionador
+                        </h3>
 
-                <div class="dish-rate">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span></span>
-                </div>
+                        <span class="blog_descricao">
+                            Ele neutraliza o cloro.
+                        </span>
+                    </div>
 
-                <div class="dish-price">
-                    <h4></h4>
-                    <button class="btn-default">
-                        <i class="fa-solid fa-basket-shopping"></i>
-                    </button>
+                    <div class="botao_padrao">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
                 </div>
             </div>
 
-            <div class="dish">
-                <div class="dish-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
+            <div id="postagem_blog">
+                <div class="blog">
+                    <div>
+                        <img src="imagens/racao.png" style="height: 210px; width: 250px;">
 
-                <img src="Circulo-Vermelho.png" class="dish-image" alt="">
+                        <h3 class="blog_titulo">
+                            Ração
+                        </h3>
 
-                <h3 class="dish-title">
-                    PHTeste HIGH Precision
-                </h3>
+                        <span class="blog_descricao">
+                            Alimento de qualidade.
+                        </span>
+                    </div>
 
-                <span class="dish-description">
-                    Texto.
-                </span>
-
-                <div class="dish-rate">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span></span>
-                </div>
-
-                <div class="dish-price">
-                    <h4></h4>
-                    <button class="btn-default">
-                        <i class="fa-solid fa-basket-shopping"></i>
-                    </button>
+                    <div class="botao_padrao">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
                 </div>
             </div>
 
-            <div class="dish">
-                <div class="dish-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
+            <div id="postagem_blog">
+                <div class="blog">
+                    <div>
+                        <img src="imagens/ph.png" style="height: 210px; width: 250px;">
 
-                <img src="Circulo-Vermelho.png" class="dish-image" alt="">
+                        <h3 class="blog_titulo">
+                            PHTeste
+                        </h3>
 
-                <h3 class="dish-title">
-                    Produto
-                </h3>
+                        <span class="blog_descricao">
+                            Testador de PH.
+                        </span>
+                    </div>
 
-                <span class="dish-description">
-                    Texto.
-                </span>
-
-                <div class="dish-rate">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span></span>
-                </div>
-
-                <div class="dish-price">
-                    <h4></h4>
-                    <button class="btn-default">
-                        <i class="fa-solid fa-basket-shopping"></i>
-                    </button>
+                    <div class="botao_padrao">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+
+            <div id="postagem_blog">
+                <div class="blog">
+                    <div>
+                        <img src="imagens/aragonita.png" style="height: 210px; width: 250px;">
+
+                        <h3 class="blog_titulo">
+                            Aragonita
+                        </h3>
+
+                        <span class="blog_descricao">
+                            Aumentador de PH.
+                        </span>
+                    </div>
+
+                    <div class="botao_padrao">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
 
     <footer>
-        <img src="src/images/wave.svg" alt="">
 
-        <div id="footer_items">
+        <img src="imagens/wave.svg">
+
+        <div id="footer_itens">
             <span id="copyright">
                 &copy 2026 Betta
             </span>
@@ -219,13 +203,8 @@
                     <i class="fa-brands fa-instagram"></i>
                 </a>
 
-                <a href="https://www.facebook.com/?locale=pt_BR">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
             </div>
         </div>
     </footer>
-    <script src="src/javascript/script.js"></script>
 </body>
-
 </html>
